@@ -49,8 +49,6 @@ function playRound(playerSelection, computerSelection) {
       return result = "LOSE"
     }
 
-
-
 }
 
 /* 
@@ -60,9 +58,9 @@ Write a NEW function called game(). Call the playRound function inside of this o
 
 function game() {
   for (let i = 0; i < 5; i++) {
-  const playerSelection = prompt("What is your play? Please, write one of this option : Rock, Paper or Scissors")
-  const computerSelection = computerPlay()
-
+    const playerSelection = prompt("What is your play? Please, write one of this option : Rock, Paper or Scissors")
+    const computerSelection = computerPlay()
+    playRound(playerSelection, computerSelection)
 }
 }
 
